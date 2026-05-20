@@ -1,0 +1,188 @@
+/* category buttons in main page */
+/* icons */
+.fancy-icon
+{
+    opacity: 0;
+    scale: 0;
+    transition: all ease-in-out 0.5s;
+}
+.fancy-button.active .fancy-icon
+{
+    opacity: 1;
+    scale: 1;
+}
+
+/* generic fancy button */
+.fancy-button
+{
+    cursor: pointer;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: var(--azul-buap-h);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nueva oferta */
+.nueva-oferta-educativa.active, .nueva-oferta-educativa:hover, .nueva-oferta-educativa:focus
+{
+    background: #A50000;
+    background: -webkit-linear-gradient(90deg, rgba(165, 0, 0, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(165, 0, 0, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(165, 0, 0, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#A50000", endColorstr="#002D4C", GradientType=1);
+}
+
+/* complejos regionales */
+.complejos-regionales.active, .complejos-regionales:hover, .complejos-regionales:focus
+{
+    background: #B4B4B4;
+    background: -webkit-linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#B4B4B4", endColorstr="#002D4C", GradientType=1);
+}
+
+/* cu2 */
+.cu2.active, .cu2:hover, .cu2:focus
+{
+    background: #3FE0D0;
+    background: -webkit-linear-gradient(90deg, rgba(63, 224, 208, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(63, 224, 208, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(63, 224, 208, 1) 0%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3FE0D0", endColorstr="#002D4C", GradientType=1);
+}
+
+/* técnicos */
+.carrera-tecnica.active, .carrera-tecnica:hover, .carrera-tecnica:focus
+{
+    background: #EA88CE;
+    background: -webkit-linear-gradient(90deg, rgba(234, 136, 206, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(234, 136, 206, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(234, 136, 206, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#EA88CE", endColorstr="#002D4C", GradientType=1);
+}
+
+/* humanidades */
+.ciencias-sociales-humanidades.active, .ciencias-sociales-humanidades:hover, .ciencias-sociales-humanidades:focus
+{
+    background: #C38FF2;
+    background: -webkit-linear-gradient(90deg, rgba(195, 143, 242, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(195, 143, 242, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(195, 143, 242, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C38FF2", endColorstr="#002D4C", GradientType=1);
+}
+
+/* exactas */
+.ingenieria-ciencias-exactas.active, .ingenieria-ciencias-exactas:hover, .ingenieria-ciencias-exactas:focus
+{
+    background: #F9AF6E;
+    background: -webkit-linear-gradient(90deg, rgba(249, 175, 110, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(249, 175, 110, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(249, 175, 110, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F9AF6E", endColorstr="#002D4C", GradientType=1);
+}
+
+/* administrativas */
+.economico-administrativas.active, .economico-administrativas:hover, .economico-administrativas:focus
+{
+    background: #F9DD63;
+    background: -webkit-linear-gradient(90deg, rgba(249, 221, 99, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(249, 221, 99, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(249, 221, 99, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#F9DD63", endColorstr="#002D4C", GradientType=1);
+}
+
+/* salud */
+.ciencias-naturales-salud.active, .ciencias-naturales-salud:hover, .ciencias-naturales-salud:focus
+{
+    background: #86C16B;
+    background: -webkit-linear-gradient(90deg, rgba(134, 193, 107, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(134, 193, 107, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    background: linear-gradient(90deg, rgba(134, 193, 107, 1) 24%, rgba(0, 45, 76, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86C16B", endColorstr="#002D4C", GradientType=1);
+}
+
+/* academic buttons in main page */
+
+/* academic unit buttons in main page */
+.au-nueva-oferta-educativa
+{
+    background-color: #E5C3C4;
+}
+.au-complejos-regionales
+{
+    background-color: #E8E8E8;
+}
+.au-cu2
+{
+    background-color: #9DF6F2;
+}
+.au-carrera-tecnica
+{
+    background-color: #FCC0E6;
+}
+.au-ciencias-sociales-humanidades
+{
+    background-color: #E3CAF2;
+}
+.au-ingenieria-ciencias-exactas
+{
+    background-color: #F2D3AA;
+}
+.au-economico-administrativas
+{
+    background-color: #FDF5B2;
+}
+.au-ciencias-naturales-salud
+{
+    background-color: #CFF9BD;
+}
+
+/* in active mode */
+.au-nueva-oferta-educativa.active
+{
+    background-color: #A50000;
+}
+.au-complejos-regionales.active
+{
+    background-color: #B4B4B4;
+}
+.au-cu2.active
+{
+    background-color: #3FE0D0;
+}
+.au-carrera-tecnica.active
+{
+    background-color: #E988CD;
+}
+.au-ciencias-sociales-humanidades.active
+{
+    background-color: #A86BE8;
+}
+.au-ingenieria-ciencias-exactas.active
+{
+    background-color: #F9AF6E;
+}
+.au-economico-administrativas.active
+{
+    background-color: #F9DD63;
+}
+.au-ciencias-naturales-salud.active
+{
+    background-color: #71B745;
+}
+
+/* "nombre"                             "color_titulo"	"color_fondo_high"	"color_fondo_low"	"color_borde" */
+/* CIENCIAS SOCIALES Y HUMANIDADES      #C38FF2	        #A86BE8	            #E3CAF2	            #6749DF */
+/* INGENIERÍAS Y CIENCIAS EXACTAS       #F9B06E	        #F9AF6E	            #F2D3AA	            #FF8800 */
+/* ECONÓMICO ADMINISTRATIVA             #F9DD64	        #F9DD63	            #FDF5B2	            #FFCF1F */
+/* CIENCIAS NATURALES Y DE LA SALUD     #86C16B	        #71B745	            #CFF9BD	            #006837 */
+/* NUEVA OFERTA EDUCATIVA               #122E48	        #A50000	            #E5C3C4	            #122E48 */
+/* COMPLEJOS REGIONALES                 #122E48	        #B4B4B4	            #E8E8E8	            #122E48 */
+/* CU2                                  #122E48	        #3FE0D0	            #9DF6F2	            #122E48 */
+/* CARRERA TÉCNICA                      #122E48	        #E988CD	            #FCC0E6	            #122E48 */
